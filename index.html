@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Promineo Tech Week 12</title>
+    <title>Notes App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
     rel="stylesheet"
@@ -12,19 +12,53 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>Week 12</h1>
-    <div class="buttonContainer">
-      <button id="reset" class="btn btn-primary">Reset</button>
+    <div class="nav">
+      <h1>Notes</h1>
+      <div class="navButtons">
+        <div id="addNote">
+          +
+        </div>
+      </div>
     </div>
-      <table class="table">
-        <tbody id="board">
-          <tr>
-            <td id="6" class="cell"></td>
-            <td id="7" class="cell"></td>
-            <td id="8" class="cell"></td>
-          </tr>
-        </tbody>
-      </table>
+    <div id="noteForm">
+      <input
+        class="noteFormInput form-control"
+        type="text"
+        id="noteTitle"
+        placeholder="Enter title..."
+        />
+      <textarea
+          class="noteFormInput form-control"
+          id="noteText"
+          rows="15"
+          placeholder="Start yapping..."
+      ></textarea>
+      <div class="buttonHolder">
+        <button id="cancelNote" class="btn btn-danger">Cancel</button>
+        <button id="saveNote" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+    </div>
+    <div id="noteModal">
+      <input
+      class="noteFormInput form-control"
+      type="text"
+      id="updateNoteTitle"
+      placeholder="Enter title..."
+      />
+      <textarea
+      class="noteFormInput form-control"
+      id="updateNoteContent"
+      rows="15"
+      placeholder="Start yapping..."
+      ></textarea>
+      <div class="buttonHolder">
+        <button id="deleteNote" class="btn btn-danger">Delete</button>
+        <button id="cancelNote2" class="btn btn-danger">Cancel</button>
+        <button id="updateNote" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+    <div id="noteContainer"></div>
     <script src="./javascript.js"></script>
   </body>
 </html>

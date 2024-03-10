@@ -1,0 +1,105 @@
+.nav {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding-left: 18%;
+    padding-right: 18%;
+    box-shadow: 0px 0px 5px 0px #bababa;
+}
+
+.navButtons {
+    display: flex;
+    align-items: center;
+}
+
+#addNote {
+    height: 34px;
+    width: 34px;
+    font-size: 30px;
+    color: #9e9b9b;
+    cursor: pointer;
+    padding: 0px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#addNote:hover {
+    background-color: #F2F2F2;
+}
+
+#noteForm {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #bababa;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.noteFormInput {
+    border: none;
+    width: 100%;
+}
+
+.noteFormInput:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.buttonHolder {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-size: 34px;
+}
+
+.note {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #bababa;
+    border-radius: 10px;
+    width: 300px;
+    max-height: 350px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#noteContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+#noteModal {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #bababa;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#updateNoteTitle {
+    font-size: 24px;
+}
