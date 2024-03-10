@@ -103,6 +103,8 @@ const openForm = () => {
 
 const closeForm = () => {
   document.getElementById("noteForm").style.display = "none";
+  document.getElementById("noteTitle").value = "";
+  document.getElementById("noteText").value = "";
 };
 
 const deleteNote = () => {
